@@ -1,0 +1,63 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "si-market-guard",
+  "version": "1.0.0",
+  "description": "Portfolio risk monitoring and disciplined market-alert workflows for stocks and ETFs, with multilingual support in English, French, German, and Persian.",
+  "author": {
+    "name": "SI"
+  },
+  "homepage": "https://github.com/Navidaitoolbox1/si-market-guard",
+  "repository": "https://github.com/Navidaitoolbox1/si-market-guard",
+  "license": "All-Rights-Reserved",
+  "keywords": [
+    "portfolio",
+    "stocks",
+    "etf",
+    "risk",
+    "market alerts",
+    "buy zones",
+    "investing",
+    "risk management",
+    "multilingual"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "SI Market Guard",
+        "shortDescription": "Portfolio risk alerts",
+        "longDescription": "SI Market Guard helps investors monitor stocks and ETFs, distinguish ordinary volatility from material risk, define buy zones, and receive concise risk-management guidance. It focuses on disciplined monitoring, not market prediction. When current information is needed, it should use available live web or market-data tools and cite material claims. It supports English, French, German, and Persian, and responds in the user's language. For informational purposes only, not investment advice.",
+        "developerName": "SI",
+        "category": "Productivity",
+        "brandColor": "#0F766E",
+        "composerIcon": "./assets/si-market-guard.svg",
+        "logo": "./assets/si-market-guard.svg",
+        "capabilities": [
+          "Review portfolio risk",
+          "Identify material market risks",
+          "Monitor company-specific risk",
+          "Define staged buy zones",
+          "Create concise alert rules",
+          "Explain risk in English, French, German, or Persian"
+        ]
+      },
+      "onboardingSkill": "./skills/market-guard/SKILL.md",
+      "publication": {
+        "release_notes": "Initial release with multilingual portfolio risk review, market-risk alerts, buy-zone planning, and disciplined action labels.",
+        "translations": {
+          "fr-FR": {
+            "subtitle": "Alertes de risque portefeuille",
+            "description": "SI Market Guard aide à surveiller les actions et ETF, distinguer la volatilité normale d'un risque réellement important, définir des zones d'achat progressives et recevoir des indications claires de gestion du risque. L'outil ne cherche pas à prédire le marché. Il répond en français, anglais, allemand ou persan. Informations uniquement, pas un conseil financier."
+          },
+          "de-DE": {
+            "subtitle": "Portfolio-Risikowarnungen",
+            "description": "SI Market Guard überwacht Aktien und ETFs, trennt normale Schwankungen von wesentlichen Risiken, hilft beim Festlegen gestaffelter Kaufzonen und liefert klare Hinweise zum Risikomanagement. Es dient nicht zur Vorhersage des Marktes. Antworten sind auf Deutsch, Englisch, Französisch oder Persisch möglich. Nur zu Informationszwecken, keine Anlageberatung."
+          },
+          "fa-IR": {
+            "subtitle": "هشدار ریسک پورتفو",
+            "description": "SI Market Guard برای پایش ریسک سهام و ETF، تشخیص تفاوت بین نوسان عادی و ریسک معنادار، تعریف خرید مرحله‌ای و ارائه هشدارهای روشن مدیریت ریسک طراحی شده است. هدف آن پیش‌بینی بازار نیست. این ابزار از فارسی، انگلیسی، فرانسوی و آلمانی پشتیبانی می‌کند. صرفاً جهت اطلاع‌رسانی است و توصیه سرمایه‌گذاری محسوب نمی‌شود."
+          }
+        }
+      }
+    }
+  }
+}
